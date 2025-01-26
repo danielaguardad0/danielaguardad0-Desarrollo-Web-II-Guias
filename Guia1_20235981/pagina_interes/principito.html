@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Principito</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script&family=Lobster&family=Playwrite+IN:wght@100..400&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          sm: '480px', 
+          md: '768px', 
+          lg: '1024px', 
+        },
+        extend: {
+          colors: {
+            gold: '#FFD700',
+            nightBlue: '#2D3142',
+            rose: '#EF476F',
+            sand: '#FFBCBC',
+          },
+          fontFamily: {
+            sans: ['Bai Jamjuree', 'sans-serif'],
+            script: ['Dancing Script', 'cursive'],
+            caveat: ['Caveat', 'cursive'], 
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    /* Fondo para dispositivos móviles */
+    @media (max-width: 480px) {
+      body {
+        background-color: #FFFAF0;
+      }
+    }
+    /* Fondo para tablets */
+    @media (min-width: 481px) and (max-width: 768px) {
+      body {
+        background-color: #FFF1E6;
+      }
+    }
+    /* Fondo para escritorios */
+    @media (min-width: 769px) {
+      body {
+        background-color: #FFF8DC;
+      }
+    }
+  </style>
+<body class="font-sans text-nightBlue">
+    <!-- Sección 1: Hero -->
+    <section id="hero" class="text-center py-10 px-5">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 font-script">
+        El Principito
+        <span class="text-yellow-500 ml-2">&#9733;</span>
+      </h1>
+      <p class="text-xl md:text-2xl mb-6 font-caveat">"Érase una vez un principito que vivía en un planeta apenas más grande que él y que tenía necesidad de un amigo…"</p>
+      <img src="../pagina_interes/images/principito_estrellas.jpg" alt="Portada de El Principito" class="mx-auto max-w-sm md:max-w-md">
+    </section>
+  </body>
+  
+
+<!-- Sección 2: Sobre el Autor -->
+<section id="about-author" class="py-10 px-5 bg-sand">
+    <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center md:items-start text-left space-y-6 md:space-y-0 md:space-x-8">
+      <div class="flex-1">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 font-script text-center md:text-left">
+          Sobre el Autor
+        </h2>
+        <p class="text-lg md:text-xl mb-4 font-caveat">
+          Antoine de Saint-Exupéry fue un aviador y escritor francés nacido el 29 de junio de 1900 en Lyon, Francia. Fue un hombre multifacético: además de ser autor de varios libros, entre ellos "El Principito", trabajó como piloto postal y participó en misiones de reconocimiento durante la Segunda Guerra Mundial.
+        </p>
+      </div>
+      <div class="flex-shrink-0">
+        <img src="../pagina_interes/images/autor.jpeg" alt="Antoine de Saint-Exupéry" class="max-w-xs rounded-lg shadow-lg">
+      </div>
+    </div>
+  </section>
+  
+<!-- Sección 3: Sinopsis -->
+<section id="synopsis" class="text-center py-10 px-5">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6 font-script">Sinopsis</h2>
+    <p class="text-lg md:text-xl leading-8 text-justify mx-auto mb-6 font-caveat max-w-2xl">
+      "El Principito" es la historia de un pequeño príncipe que deja su asteroide para explorar el universo.
+      A través de sus encuentros con distintos personajes, nos enseña lecciones sobre el amor, la soledad y
+      el significado de la vida. La obra es una reflexión profunda sobre las relaciones humanas, el sentido de
+      la existencia y la importancia de los valores esenciales, como la amistad y la bondad. El autor, Antoine de
+      Saint-Exupéry, nos lleva a cuestionarnos lo que verdaderamente importa, a través de la mirada de un niño
+      que ve el mundo con ojos puros, alejados de las complicaciones de la adultez.
+    </p>
+    <img src="../pagina_interes/images/principito_zorro.jpg" alt="El Principito y el Zorro" class="mx-auto max-w-xs rounded-lg shadow-lg">
+  </section>
+  
+<!-- Sección 4: Personajes Principales -->
+<section id="characters" class="py-10 px-5 bg-rose text-white">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-6 font-script">Personajes Principales</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-lg font-caveat">
+        <!-- Personaje 1: El Principito -->
+        <div class="flex items-center space-x-4">
+          <img src="../pagina_interes/images/principito_personaje.jpg" alt="El Principito" class="w-16 h-16 rounded-full shadow-lg">
+          <span><strong>El Principito:</strong> Un niño curioso y sabio que viaja por el universo.</span>
+        </div>
+        <!-- Personaje 2: El Aviador -->
+        <div class="flex items-center space-x-4">
+          <img src="../pagina_interes/images/aviador_personaje.jpg" alt="El Aviador" class="w-16 h-16 rounded-full shadow-lg">
+          <span><strong>El Aviador:</strong> El narrador de la historia que encuentra al principito en el desierto.</span>
+        </div>
+        <!-- Personaje 3: La Rosa -->
+        <div class="flex items-center space-x-4">
+          <img src="../pagina_interes/images/rosa_personaje.jpg" alt="La Rosa" class="w-16 h-16 rounded-full shadow-lg">
+          <span><strong>La Rosa:</strong> El amor del principito, llena de belleza y complejidad.</span>
+        </div>
+        <!-- Personaje 4: El Zorro -->
+        <div class="flex items-center space-x-4">
+          <img src="../pagina_interes/images/zorro_personaje.png" alt="El Zorro" class="w-16 h-16 rounded-full shadow-lg">
+          <span><strong>El Zorro:</strong> Enseña al principito el valor de la amistad.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- Sección 5: Frases Memorables -->
+<section id="quotes" class="py-10 px-5">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6 font-script">Frases Memorables</h2>
+      <ul class="space-y-6 text-xl font-caveat">
+        <li class="italic text-rose-800">
+          "Lo esencial es invisible a los ojos."
+        </li>
+        <li class="italic text-rose-800">
+          "Eres responsable de lo que has domesticado."
+        </li>
+        <li class="italic text-rose-800">
+          "Solo se ve bien con el corazón. Lo esencial es invisible a los ojos."
+        </li>
+        <li class="italic text-rose-800">
+          "Es el tiempo que perdiste por tu rosa lo que hace que tu rosa sea tan importante."
+        </li>
+        <li class="italic text-rose-800">
+          "Lo que hace más hermoso al desierto es que en algún lugar esconde un pozo."
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 text-center bg-sand text-rose">
+    <p>© Daniela Guardado. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
