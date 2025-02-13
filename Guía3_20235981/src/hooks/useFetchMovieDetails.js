@@ -34,7 +34,7 @@ export function useFetchMovieDetails(selectedId) {
         setError(null); // Reinicia errores previos
 
         // Petición a la API de OMDb con la clave de acceso y el ID de la película
-        const response = await fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&i=${selectedId}`);
+        const response = await fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&i=${selectedId}`);
 
         // Verifica si la respuesta HTTP es correcta
         if (!response.ok) {
